@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' style="background-color: #000;">
+<head>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no' name='viewport'/>
+  <meta name="theme-color" content="#000"/>
+  <b:include data='blog' name='all-head-content'/>
+  <title><data:blog.pageTitle/></title>
+  
+  <!-- Pure CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/pure-min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/grids-responsive-min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  
+  <script type="text/javascript">(function(){var url=window.location.href,param="?m=1";if(url.includes(param)){var urlObj=new URL(url);urlObj.searchParams.delete('m');window.history.replaceState(null,null,urlObj.toString());}})()</script>
+  
+  <b:skin><![CDATA[
+  
+  html,
+body {
+  -webkit-tap-highlight-color: transparent !important;
+  /* Copy Paste Disable*/
+  user-select: none !important;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none !important;
+  /* Safari */
+  -khtml-user-select: none !important;
+  /* Konqueror HTML */
+  -moz-user-select: none !important;
+  /* Firefox */
+  -ms-user-select: none !important;
+  /* Internet Explorer/Edge */
+  -moz-user-select: none !important;
+  -webkit-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -o-user-select: none !important;
+  .widget,.section,.widget-content,.post-body,.post-footer,.post-header{margin:0!important;padding:0!important;border:none!important;outline:none!important;box-shadow:none!important}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#333;line-height:1.6;padding-top:60px;background-color:#f6f6f6}.container{max-width:1200px;margin:0 auto;padding:0 1rem}.header{background-color:#222;box-shadow:0 1px 3px rgba(0,0,0,0.8);position:fixed;top:0;width:100%;z-index:1000}.header-inner{display:flex;justify-content:space-between;align-items:center;height:60px}.brand{font-weight:700;font-size:1.3rem;color:#fff;text-decoration:none;cursor:default}.menu-toggle{display:none;background:none;border:none;font-size:1.5rem;color:#fff;cursor:pointer}.main-content{padding:1.5rem 0}
+
+  /* New Post Card Styles */
+  .post-card{background-color:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1);margin-bottom:1.5rem;overflow:hidden;position:relative}
+  .post-image-container{position:relative;width:100%;height:240px;overflow:hidden}
+  .post-image{width:100%;height:100%;object-fit:cover}
+  .post-image-overlay{position:absolute;bottom:0;left:0;width:100%;height:50%;background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+  .post-card-title{position:absolute;bottom:20px;left:20px;right:20px;color:#fff !important;font-size:1.4rem;font-weight:700;margin:0;line-height:1.3;z-index:1;text-shadow:0 1px 2px rgba(0,0,0,0.5)}
+  .post-card-title a {color:#fff !important; text-decoration:none !important}
+  .post-card-body{padding:1.5rem}
+  .post-card-excerpt{margin-bottom:1rem;font-size:0.95rem;line-height:1.6;color:#555;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;max-height:4.8rem}
+  .post-card-meta{display:flex;align-items:center;justify-content:space-between}
+  .post-meta-info{display:flex;font-size:0.85rem;color:#777}
+  .post-meta-info i{margin-right:0.25rem}
+  .post-meta-info span{margin-right:1rem}
+  .post-card-action .read-more{display:inline-block;background-color:#1f8dd6;color:#fff;padding:0.5rem 1rem;border-radius:4px;text-decoration:none;font-size:0.9rem;transition:background-color .2s}
+  .post-card-action .read-more:hover{background-color:#1a7ec1;color:#fff;text-decoration:none}
+
+  .sidebar{margin-bottom:1.5rem}.sidebar-card{background-color:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1);margin-bottom:1.5rem;padding:1.5rem}.sidebar-title{font-size:1.1rem;margin-top:0;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid #eee}.popular-post{margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid #eee}.popular-post:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}.popular-post-img{width:100%;border-radius:4px}.popular-post-title{font-size:.95rem;margin:.5rem 0 0}.popular-post-title a{color:#333;text-decoration:none}.popular-post-title a:hover{color:#1f8dd6}.label-item{margin-bottom:.5rem}.label-item a{color:#555;text-decoration:none}.label-item a:hover{color:#1f8dd6}.post-title{font-size:1.8rem;line-height:1.3;margin-top:0;margin-bottom:.75rem}.post-content{line-height:1.7}.post-labels{margin-top:1.5rem}.post-label{display:inline-block;background-color:#f0f0f0;color:#555;padding:.25rem .75rem;margin-right:.5rem;margin-bottom:.5rem;border-radius:15px;font-size:.8rem;text-decoration:none;transition:all .2s}.post-label:hover{background-color:#1f8dd6;color:#fff;text-decoration:none}.pagination{margin:2rem 0;text-align:center}.pagination-btn{display:inline-block;padding:.5rem 1rem;background-color:#fff;color:#333;border:1px solid #ddd;border-radius:4px;text-decoration:none;margin:0 .25rem}.pagination-btn:hover{background-color:#f0f0f0;text-decoration:none}.footer{background-color:#333;color:#ccc;padding:2rem 0;margin-top:2rem}.footer-title{color:#fff;font-size:1.1rem;margin-top:0;margin-bottom:1rem}.footer-links a{display:block;color:#ccc;text-decoration:none;margin-bottom:.5rem}.footer-links a:hover{color:#fff}.footer-bottom{background-color:#222;color:#999;padding:1rem 0;text-align:center}.social-icons{margin-top:1rem}.social-icon{display:inline-block;width:32px;height:32px;line-height:32px;text-align:center;background-color:rgba(255,255,255,0.1);color:#fff;border-radius:50%;margin-right:.5rem;transition:background-color .2s}.social-icon:hover{background-color:#1f8dd6;color:#fff;text-decoration:none}.pure-form input[type="text"],.pure-form input[type="email"],.pure-form input[type="search"]{box-sizing:border-box;width:100%;padding:.5rem;border:1px solid #ddd;border-radius:4px;font-size:.9rem}.search-form{position:relative}.search-input{padding-right:2.5rem!important}.search-btn{position:absolute;right:0;top:0;background:none;border:none;color:#777;padding:.5rem;cursor:pointer}.error-page{text-align:center;padding:4rem 0}.error-code{font-size:5rem;font-weight:700;color:#1f8dd6;margin:0}.error-message{font-size:1.3rem;color:#777;margin-bottom:1.5rem}img{max-width:100%;height:auto}.comments{margin-top:2rem}.comments-title{font-size:1.3rem;margin-bottom:1rem}
+
+  /* Fix for sidebar to align with main content */
+  .pure-g {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    width: calc(100% + 2rem);
+  }
+  .pure-g > div {
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Fix for single page display */
+  .static-page .main-content,
+  .item-page .main-content {
+    width: 100%;
+    display: block;
+  }
+
+  /* Responsive Fixes */
+  @media (max-width:767px){
+    .header-inner{flex-wrap:wrap;height:auto;min-height:60px}
+    .brand{margin-bottom:0;padding-left:1rem}
+    .menu-toggle{display:block;padding-right:1rem}
+    .nav-menu{display:none;position:absolute;top:60px;left:0;width:100%;background-color:#222;color:#fff !important;box-shadow:0 2px 3px rgba(0,0,0,0.8);z-index:1001}
+    .nav-menu.active{display:block}
+    .nav-menu .pure-menu-list{width:100%;padding:0;margin:0}
+    .nav-menu .pure-menu-item{display:block;width:100%}
+    .nav-menu .pure-menu-link{padding:1rem;display:block;border-bottom:1px solid #333}
+    .nav-menu .pure-menu-link:hover{background-color:#444}
+    .nav-menu .pure-menu-item:last-child .pure-menu-link{border-bottom:none}
+    .search-form{margin:0.5rem 1rem 1rem;width:calc(100% - 2rem)}
+    .footer-form{flex-direction:column}
+    .footer-form input[type="email"]{margin-bottom:.5rem;margin-right:0}
+    body{padding-top:60px}
+    .post-image-container{height:200px}
+    .post-card-title{font-size:1.2rem}
+  }
+  @media (min-width:768px){
+    .sidebar{position:sticky;top:75px}
+    .nav-menu{display:flex !important}
+    .search-form{margin-left:1rem}
+  }
+  ]]></b:skin>
+
+  <b:template-skin>
+    <![CDATA[
+    .post-header,.blog-pager-older-link,.blog-pager-newer-link,.post-footer,.feed-links,.post-feeds,.blog-feeds{display:none!important}.content-inner{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+    ]]>
+  </b:template-skin>
+</head>
+
+<body expr:class='data:blog.pageType'>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <b:section class='brand' id='header' maxwidgets='1'>
+          <b:widget id='Header1' locked='true' title='Blog Title' type='Header' version='2'>
+            <b:includable id='main' var='this'>
+              <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                <span><data:title/></span>
+              <b:else/>
+                <div><data:title/></div>
+              </b:if>
+            </b:includable>
+          </b:widget>
+        </b:section>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-menu" id="nav-menu">
+          <div class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+              <li class="pure-menu-item">
+                <a class="pure-menu-link" href="/">Home</a>
+              </li>
+              <li class="pure-menu-item">
+                <a class="pure-menu-link" href="/p/about-this-blog.html">About</a>
+              </li>
+              <li class="pure-menu-item">
+                <a class="pure-menu-link" href="/p/contact-form.html">Contact</a>
+              </li>
+              <li class="pure-menu-item">
+                <a class="pure-menu-link" href="/p/disclaimer.html">Disclaimer</a>
+              </li>
+            </ul>
+          </div>
+          
+          <form class="pure-form search-form" onsubmit="return searchBlog()">
+            <input class="search-input" id="search-input" type="search" placeholder="Search" aria-label="Search blog" />
+            <button class="search-btn" type="submit" aria-label="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="pure-g">
+        <!-- Posts Column -->
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="pure-g">
+            <div class="pure-u-1">
+              <b:section class='main-content' id='main' showaddelement='true'>
+                <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2'>
+                  <b:includable id='main' var='this'>
+                    <!-- Error Page -->
+                    <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+                      <div class='error-page'>
+                        <h1 class='error-code'>404</h1>
+                        <p class='error-message'>The page you're looking for could not be found.</p>
+                        <a class="pure-button pure-button-primary" expr:href='data:blog.homepageUrl'>Return to Homepage</a>
+                      </div>
+                    </b:if>
+
+                    <!-- Label/Search Results Page -->
+                    <b:if cond='data:blog.searchLabel'>
+                      <div class="card card-body">
+                        <h2>Posts with label: <span class="highlight"><data:blog.searchLabel/></span></h2>
+                      </div>
+                    </b:if>              
+                               
+                    <!-- Single Post Page -->
+                    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                      <b:loop values='data:posts' var='post'>
+                        <div class="card">
+                          <div class="card-body">
+                            <h1 class="post-title"><data:post.title/></h1>
+                            <div class="card-meta">
+                              <b:if cond='data:post.author'>
+                                <span><i class="fas fa-user"></i> <data:post.author.name/></span>
+                              </b:if>
+                              <b:if cond='data:post.timestamp'>
+                                <span><i class="far fa-calendar"></i> <data:post.date.formatted/></span>
+                              </b:if>
+                            </div>
+                            <div class="post-content">
+                              <data:post.body/>
+                            </div>
+                            <b:include name='postLabels'/>
+                            <b:include name='commentSystem'/>
+                          </div>
+                        </div>
+                      </b:loop>
+                    <!-- Static Page fix -->
+                    <b:elseif cond='data:blog.pageType == &quot;static_page&quot;'/>
+                      <b:loop values='data:posts' var='post'>
+                        <div class="card">
+                          <div class="card-body">
+                            <h1 class="post-title"><data:post.title/></h1>
+                            <div class="post-content">
+                              <data:post.body/>
+                            </div>
+                          </div>
+                        </div>
+                      </b:loop>
+                    <b:else/>
+                      <!-- Blog Post List Page - NEW DESIGN -->
+                      <b:loop values='data:posts' var='post'>
+                        <div class="post-card">
+                          <div class="post-image-container">
+                            <b:if cond='data:post.featuredImage'>
+                              <img class="post-image" expr:alt='data:post.title' expr:src='data:post.featuredImage'/>
+                            <b:else/>
+                              <img class="post-image" alt="Default Post Image" src="https://via.placeholder.com/800x450?text=No+Image"/>
+                            </b:if>
+                            <div class="post-image-overlay"></div>
+                            <h2 class="post-card-title">
+                              <a expr:href='data:post.url'><data:post.title/></a>
+                            </h2>
+                          </div>
+                          <div class="post-card-body">
+                            <div class="post-card-excerpt">
+                              <b:if cond='data:post.snippets.long'>
+                                <data:post.snippets.long/>
+                              <b:else/>
+                                <data:post.snippet/>
+                              </b:if>
+                            </div>
+                            <div class="post-card-meta">
+                              <div class="post-meta-info">
+                                <b:if cond='data:post.author'>
+                                  <span><i class="fas fa-user"></i> <data:post.author.name/></span>
+                                </b:if>
+                                <b:if cond='data:post.timestamp'>
+                                  <span><i class="far fa-calendar"></i> <data:post.date.formatted/></span>
+                                </b:if>
+                              </div>
+                              <div class="post-card-action">
+                                <a class="read-more" expr:href='data:post.url'>Read More</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </b:loop>
+                      <b:include name='nextprev'/>
+                    </b:if>
+                  </b:includable>
+                  
+                  <b:includable id='nextprev'>
+                    <div class="pagination">
+                      <b:if cond='data:newerPageUrl'>
+                        <a class="pagination-btn" expr:href='data:newerPageUrl'>
+                          <i class="fas fa-chevron-left"></i> Back
+                        </a>
+                      </b:if>
+                      <b:if cond='data:olderPageUrl'>
+                        <a class="pagination-btn" expr:href='data:olderPageUrl'>
+                          Load More <i class="fas fa-chevron-right"></i>
+                        </a>
+                      </b:if>
+                    </div>
+                  </b:includable>
+
+                  <b:includable id='postLabels'>
+                    <b:if cond='data:post.labels'>
+                      <div class='post-labels'>
+                        <b:loop values='data:post.labels' var='label'>
+                          <a class="post-label" expr:href='data:label.url'><data:label.name/></a>
+                        </b:loop>
+                      </div>
+                    </b:if>
+                  </b:includable>
+
+                  <b:includable id='commentSystem'>
+                    <div class='comments' expr:id='&quot;comments-&quot; + data:post.id'>
+                      <b:if cond='data:post.allowComments'>
+                        <h3 class="comments-title">Comments</h3>
+                        <div class='comments-content'>
+                          <b:include data='post' name='comments'/>
+                        </div>
+                      </b:if>
+                    </div>
+                  </b:includable>
+                </b:widget>
+              </b:section>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="sidebar">
+            <div class="pure-g">
+              <div class="pure-u-1">
+                <b:section class='sidebar' id='sidebar' preferred='yes'>
+                  <!-- Popular Posts Widget -->
+                  <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='2'>
+                    <b:includable id='main'>
+                      <div class='sidebar-card'>
+                        <h3 class='sidebar-title'><data:title/></h3>
+                        <div class='popular-posts-content'>
+                          <b:loop values='data:posts' var='post'>
+                            <div class='popular-post'>
+                              <div class="pure-g">
+                                <b:if cond='data:post.featuredImage'>
+                                  <div class="pure-u-1-3">
+                                    <a expr:href='data:post.url'>
+                                      <img class="popular-post-img" expr:alt='data:post.title' expr:src='data:post.featuredImage'/>
+                                    </a>
+                                  </div>
+                                  <div class="pure-u-2-3">
+                                    <h4 class='popular-post-title'>
+                                      <a expr:href='data:post.url'><data:post.title/></a>
+                                    </h4>
+                                  </div>
+                                <b:else/>
+                                  <div class="pure-u-1">
+                                    <h4 class='popular-post-title'>
+                                      <a expr:href='data:post.url'><data:post.title/></a>
+                                    </h4>
+                                  </div>
+                                </b:if>
+                              </div>
+                            </div>
+                          </b:loop>
+                        </div>
+                      </div>
+                    </b:includable>
+                  </b:widget>
+
+                  <!-- Labels Widget -->
+                  <b:widget id='Label1' locked='false' title='Categories' type='Label' version='2'>
+                    <b:includable id='main'>
+                      <div class='sidebar-card'>
+                        <h3 class='sidebar-title'><data:title/></h3>
+                        <div class='labels-content'>
+                          <b:loop values='data:labels' var='label'>
+                            <div class='label-item'>
+                              <a expr:href='data:label.url'>
+                                <i class="fas fa-tag"></i> <data:label.name/> (<data:label.count/>)
+                              </a>
+                            </div>
+                          </b:loop>
+                        </div>
+                      </div>
+                    </b:includable>
+                  </b:widget>
+                </b:section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div style="padding:0 1rem 1.5rem;">
+            <h4 class="footer-title">Version 1.0</h4>
+            <p><b:eval expr='data:blog.description ?: "This template is developed and designed with passion by Prinsberwa™ using the PureCSS Framework."'/></p>
+            <div class="social-icons">
+              <a href="https://facebook.com/prinsberwa" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/prinsberwa" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/prinsberwa" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://t.me/prinsberwa" class="social-icon" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+              <a href="https://github.com/prinsberwa" class="social-icon" aria-label="Github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div style="padding:0 1rem 1.5rem;">
+            <h4 class="footer-title">Quick Links</h4>
+            <div class="footer-links">
+              <a href="/">Home</a>
+              <a href="/p/about-this-blog.html">About</a>
+              <a href="/p/contact-form.html">Contact</a>
+              <a href="/p/disclaimer.html">Disclaimer</a>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div style="padding:0 1rem 1.5rem;">
+            <h4 class="footer-title">Newsletter</h4>
+            <p>Subscribe to blog newsletter to get the latest updates directly to your inbox.</p>
+            <form class="pure-form footer-form">
+              <div style="display:flex;margin-bottom:0.5rem;">
+                <input type="email" placeholder="Your Email" style="margin-right:0.25rem;" required="required" aria-label="Newsletter email"/>
+                <button class="pure-button pure-button-primary" type="submit" aria-label="Submit"><i class="fas fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© <b:eval expr='data:blog.copyrightyear'/> <data:blog.title/>. All Rights Reserved.</p>
+    </div>
+  </div>
+
+  <script>//<![CDATA[
+document.addEventListener('DOMContentLoaded',function(){
+  const menuToggle=document.getElementById('menu-toggle');
+  const navMenu=document.getElementById('nav-menu');
+  
+  if(menuToggle && navMenu){
+    menuToggle.addEventListener('click',function(){
+      navMenu.classList.toggle('active');
+    });
+  }
+  
+  // Close menu when clicking outside
+  document.addEventListener('click',function(event){
+    if(navMenu && navMenu.classList.contains('active') && 
+       !navMenu.contains(event.target) && 
+       event.target !== menuToggle && 
+       !menuToggle.contains(event.target)){
+      navMenu.classList.remove('active');
+    }
+  });
+  
+  // Close menu when clicking nav links (for mobile)
+  const navLinks = document.querySelectorAll('.nav-menu .pure-menu-link');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if(window.innerWidth < 768 && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+      }
+    });
+  });
+
+  // Handle image errors
+  const images=document.getElementsByTagName('img');
+  for(let i=0;i<images.length;i++){
+    images[i].onerror=function(){
+      this.style.display='none';
+    }
+  }
+});
+
+function searchBlog(){
+  const query=document.getElementById('search-input').value.trim();
+  if(query){
+    window.location.href='/search?q='+encodeURIComponent(query);
+  }
+  return false;
+}
+//]]></script>
+</body>
+</html>

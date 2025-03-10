@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no' name='viewport'/>
+<b:include data='blog' name='all-head-content'/>
+<title><data:blog.pageTitle/></title>
+<script type="text/javascript">(function(){var url=window.location.href,param="?m=1";if(url.includes(param)){var urlObj=new URL(url);urlObj.searchParams.delete('m');window.history.replaceState(null,null,urlObj.toString());}})();</script>
+<b:skin><![CDATA[/*
+-----------------------------------------------
+Blogger Template Style
+Name:         PR Blogger Template
+Designer:     Prince Jatav
+URL:          https://prince.rf.gd
+----------------------------------------------- */
+/* Variables
+----------------------------------------------- */
+<Variable name="keycolor" description="Main Color" type="color" default="#2196f3" value="#2196f3"/>
+<Variable name="body.background" description="Background" type="background" color="#f0f0f0" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Override Background Image" type="background" default="none"/>
+
+<!-- Header -->
+<Variable name="header.background.color" description="Header Background" type="color" default="#ffffff"/>
+<Variable name="header.background.hover" description="Header Hover Background" type="color" default="$(keycolor)"/>
+<Variable name="header.text.color" description="Header Text Color" type="color" default="#333333"/>
+<Variable name="header.hover.color" description="Header Hover Color" type="color" default="#ffffff"/>
+
+<!-- Typography -->
+<Variable name="font.body" description="Body Font" type="font" default="normal normal 14px Arial, sans-serif"/>
+<Variable name="font.menu" description="Menu Font" type="font" default="normal bold 14px Arial, sans-serif"/>
+<Variable name="font.title" description="Post Title Font" type="font" default="normal bold 20px Arial, sans-serif"/>
+<Variable name="font.widget" description="Widget Title Font" type="font" default="normal bold 16px Arial, sans-serif"/>
+
+<!-- Colors -->
+<Variable name="text.color" description="Text Color" type="color" default="#333333"/>
+<Variable name="link.color" description="Link Color" type="color" default="$(keycolor)"/>
+<Variable name="link.hover.color" description="Link Hover Color" type="color" default="#1976d2"/>
+<Variable name="meta.color" description="Meta Text Color" type="color" default="#757575"/>
+<Variable name="border.color" description="Border Color" type="color" default="#dddddd"/>
+
+<!-- Post -->
+<Variable name="post.background" description="Post Background" type="color" default="#ffffff"/>
+<Variable name="post.border" description="Post Border" type="color" default="$(border.color)"/>
+<Variable name="post.title.color" description="Post Title Color" type="color" default="#212121"/>
+<Variable name="post.text" description="Post Text Color" type="color" default="$(text.color)"/>
+
+<!-- Sidebar -->
+<Variable name="sidebar.background" description="Sidebar Background" type="color" default="#ffffff"/>
+<Variable name="sidebar.border" description="Sidebar Border" type="color" default="$(border.color)"/>
+<Variable name="widget.title.color" description="Widget Title Color" type="color" default="#212121"/>
+<Variable name="widget.text.color" description="Widget Text Color" type="color" default="$(text.color)"/>
+
+<!-- Footer -->
+<Variable name="footer.background" description="Footer Background" type="color" default="#212121"/>
+<Variable name="footer.text" description="Footer Text Color" type="color" default="#ffffff"/>
+<Variable name="footer.link" description="Footer Link Color" type="color" default="#ffffff"/>
+
+<!-- Comments -->
+<Variable name="comment.background" description="Comment Background" type="color" default="#f5f5f5"/>
+<Variable name="comment.border" description="Comment Border" type="color" default="$(border.color)"/>
+<Variable name="comment.text" description="Comment Text Color" type="color" default="$(text.color)"/>
+
+<!-- Social -->
+<Variable name="social.background" description="Social Background" type="color" default="$(keycolor)"/>
+<Variable name="social.color" description="Social Icon Color" type="color" default="#ffffff"/>
+
+<!-- Mobile -->
+<Variable name="mobile.background" description="Mobile Background" type="color" default="#ffffff"/>
+<Variable name="mobile.menu.color" description="Mobile Menu Color" type="color" default="$(keycolor)"/>
+<Variable name="mobile.text" description="Mobile Text Color" type="color" default="$(text.color)"/>
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  
+  -webkit-tap-highlight-color: transparent !important;
+  /* Copy Paste Disable*/
+  user-select: none !important;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none !important;
+  /* Safari */
+  -khtml-user-select: none !important;
+  /* Konqueror HTML */
+  -moz-user-select: none !important;
+  /* Firefox */
+  -ms-user-select: none !important;
+  /* Internet Explorer/Edge */
+  -moz-user-select: none !important;
+  -webkit-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -o-user-select: none !important;
+  
+  line-height:1.6;padding-top:60px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif}img{max-width:100%;height:auto}.header{position:fixed;top:0;left:0;right:0;background:#fff;padding:15px;box-shadow:0 2px 5px rgba(0,0,0,.1);z-index:1000}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px}.row{display:flex;flex-wrap:wrap;margin:0 -15px}.main-content{flex:1;min-width:0;padding:0 15px}.sidebar{width:300px;padding:0 15px}.post{margin-bottom:30px;border:1px solid #eee;padding:20px;border-radius:4px}.post-title{margin-bottom:15px;font-size:24px}.post-title a{color:#333;text-decoration:none}.post-snippet{margin-bottom:15px;color:#666}.post-meta{margin-bottom:15px;color:#888;font-size:14px}.post-labels{margin-top:15px;font-size:14px}.read-more{display:inline-block;padding:8px 16px;background:#007bff;color:#fff;text-decoration:none;border-radius:4px}.error-page{text-align:center;padding:60px 20px}.error-page h1{font-size:48px;margin-bottom:20px}.sidebar .widget{margin-bottom:30px;padding:15px;border:1px solid #eee;border-radius:4px}.widget .title{margin-bottom:15px;font-size:18px}.popular-post{margin-bottom:15px}.popular-post h3{font-size:16px;margin:10px 0}.popular-post a{color:#333;text-decoration:none}.blog-pager{margin:20px 0;text-align:center}.blog-pager a{display:inline-block;padding:8px 16px;margin:0 5px;background:#f8f9fa;border:1px solid #dee2e6;text-decoration:none;color:#007bff;border-radius:4px}@media(max-width:768px){.row{flex-direction:column}.sidebar{width:100%;margin-top:30px}} ]]></b:skin>
+
+<b:template-skin><![CDATA[ .post-header, .post-footer { display: none; } ]]></b:template-skin>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class='header'>
+    <div class='container'><b:section class='header' id='header' maxwidgets='1'><b:widget id='Header1' locked='true' title='Blog Title' type='Header' version='2'><b:includable id='main' var='this'><div class='header-content'><h1><b:if cond='data:blog.url == data:blog.homepageUrl'><data:title/><b:else/><a expr:href='data:blog.homepageUrl'><data:title/></a></b:if></h1><b:if cond='data:description != &quot;&quot;'><p class='description'><data:description/></p></b:if></div></b:includable></b:widget></b:section></div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class='container'>
+        <div class='row'>
+
+            <!-- Posts -->
+            <div class='main-content'><b:section class='main' id='main' showaddelement='true'><b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2'><b:includable id='main' var='this'>
+
+            <!-- Error Page -->
+            <b:if cond='data:blog.pageType == &quot;error_page&quot;'><div class='error-page'><h1>404</h1><p>The page you're looking for could not be found.</p><a expr:href='data:blog.homepageUrl'>Return to Homepage</a></div>
+            </b:if>
+
+            <!-- Label/Search Results Page -->
+            <b:if cond='data:blog.searchLabel'>
+            <h2 class='label-header'>Posts with label: <data:blog.searchLabel/></h2>
+            </b:if>              
+                           
+            <!-- Regular Blog Posts -->
+            <b:if cond='data:blog.pageType == &quot;item&quot;'>
+
+            <b:loop values='data:posts' var='post'>
+            <article class='post'><h2 class='post-title'><data:post.title/></h2><div class='post-meta'><b:if cond='data:post.author'><span class='author'>By <data:post.author/></span></b:if><b:if cond='data:post.timestamp'><span class='date'> • <data:post.timestamp/></span></b:if></div><div class='post-body'><data:post.body/></div><b:include name='postLabels'/><b:include name='commentSystem'/>
+            </article>
+            </b:loop>
+
+<b:else/>
+            <b:loop values='data:posts' var='post'>
+            <article class='post'><h2 class='post-title'><a expr:href='data:post.url'><data:post.title/></a></h2><div class='post-meta'><b:if cond='data:post.author'><span class='author'>By <data:post.author/></span></b:if><b:if cond='data:post.timestamp'><span class='date'> • <data:post.timestamp/></span></b:if></div><div class='post-snippet'><data:post.snippet/></div><a class='read-more' expr:href='data:post.url'>Read More</a>
+            </article>
+            </b:loop>
+
+<b:include name='nextprev'/>
+            </b:if>
+</b:includable>
+                        
+            <b:includable id='nextprev'><div class='blog-pager'><b:if cond='data:newerPageUrl'><a class='newer-link' expr:href='data:newerPageUrl'><data:newerPageTitle/></a></b:if><b:if cond='data:olderPageUrl'><a class='older-link' expr:href='data:olderPageUrl'><data:olderPageTitle/></a></b:if></div>
+            </b:includable>
+
+            <b:includable id='postLabels'><b:if cond='data:post.labels'><div class='post-labels'>Labels: <b:loop values='data:post.labels' var='label'><a expr:href='data:label.url'><data:label.name/></a><b:if cond='data:label.isLast != true'>, </b:if></b:loop></div></b:if>
+            </b:includable>
+
+            <b:includable id='commentSystem'><div class='comments' expr:id='&quot;comments-&quot; + data:post.id'><b:if cond='data:post.allowComments'><div class='comments-content'><b:include data='post' name='comments'/></div></b:if></div>
+            </b:includable>
+
+
+                        
+                    </b:widget>
+                </b:section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class='sidebar'>
+            <b:section class='sidebar' id='sidebar' preferred='yes'>
+
+            <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='2'>
+            <b:includable id='main'><div class='widget'><h2 class='title'><data:title/></h2><div class='widget-content'><b:loop values='data:posts' var='post'><div class='popular-post'><b:if cond='data:post.featuredImage'><a expr:href='data:post.url'><img expr:alt='data:post.title' expr:src='data:post.featuredImage'/></a></b:if><h3><a expr:href='data:post.url'><data:post.title/></a></h3></div></b:loop></div></div>
+            </b:includable></b:widget>
+
+            <b:widget id='Label1' locked='false' title='Labels' type='Label' version='2'><b:includable id='main'><div class='widget'><h2 class='title'><data:title/></h2><div class='widget-content'><b:loop values='data:labels' var='label'><div class='label-item'><a expr:href='data:label.url'><data:label.name/> (<data:label.count/>)</a></div></b:loop></div></div></b:includable>
+            </b:widget>
+
+          </b:section>
+       </div>
+   </div>
+</div>
+
+<script>//<![CDATA[ window.addEventListener('load',function(){var images=document.getElementsByTagName('img');for(var i=0;i<images.length;i++){images[i].onerror=function(){this.style.display='none'}}});function searchBlog(){var query=document.getElementById('search-input').value.trim();if(query){window.location.href='/search?q='+encodeURIComponent(query)}return false} //]]>
+</script>
+
+</body>
+</html>
